@@ -4,7 +4,7 @@ import { trainingBenefits } from "../data";
 
 const Benefits = () => {
   return (
-    <div className=" py-14 lg:py-0 px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-4 ">
+    <div className=" py-14 pt-44 px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-4 ">
       <div className=" col-span-2">
         <img
           src={Image}

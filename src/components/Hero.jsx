@@ -8,7 +8,7 @@ const Hero = () => {
     <>
       <section className="hero  lg:pr-[50px] bg-[#4caf50]">
         <div className="row px-5 lg:px-10 text-center lg:text-left">
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-clash   font-bold ">
+          <h1 className="text-2xl mt-10 lg:mt-0 md:text-4xl lg:text-5xl font-clash   font-bold ">
             BEST ONLINE EDUCATION EXPERTISE
           </h1>
           <p className="font-monts text-[12px] leading-4 lg:text-base">
