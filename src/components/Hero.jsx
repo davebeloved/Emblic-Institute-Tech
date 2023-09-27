@@ -11,7 +11,7 @@ const Hero = () => {
           <h1 className="text-2xl mt-10 lg:mt-0 md:text-4xl lg:text-5xl font-clash   font-bold ">
             BEST ONLINE EDUCATION EXPERTISE
           </h1>
-          <p className="font-monts font-bold text-[#1e4620] lg:text-white text-[12px] leading-4 lg:text-base">
+          <p className="font-inter font-bold text-[#1e4620] lg:text-white text-[12px] leading-4 lg:text-base">
             We cultivate within our students an ideal learning culture and a
             wholesome educational environment that nurtures ongoing learning and
             swift advancement.
