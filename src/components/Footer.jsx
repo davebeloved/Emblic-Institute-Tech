@@ -149,7 +149,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="legal">
-        <p>
+        <p className="leading-none">
           ©Copyright {year} Emblic Technologies. All rights reserved | Powered
           by: Emblic Technologies
         </p>
