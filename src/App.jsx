@@ -2,15 +2,17 @@ import React from "react";
 import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
-import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 const App = () => {
   return (
     <div>
-      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>

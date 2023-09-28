@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
-
+import { motion } from "framer-motion";
 const Testimonial = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
@@ -40,12 +40,34 @@ const Testimonial = () => {
   //   }, [currentTestimonial]);
 
   return (
-    <div className="bg-gray-100 py-16 px-6">
-      <h2 className="text-center font-semibold font-clash text-2xl md:text-3xl text-[#1e4620] mb-10">
+    <div className="bg-gray-100 py-16 px-6 overflow-hidden">
+      <motion.h2
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{
+          delay: 0.2,
+          x: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 1,
+        }}
+        className="text-center font-semibold font-clash text-2xl md:text-3xl text-[#1e4620] mb-10"
+      >
         WHAT DOES OUR STUDENTS SAY ABOUT US
-      </h2>
+      </motion.h2>
       <div className="max-w-sm lg:max-w-5xl mx-auto text-center">
-        <div className="  bg-white p-10 rounded-md shadow-md h-92">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.8,
+            y: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          className="  bg-white p-10 rounded-md shadow-md h-92"
+        >
           <BiSolidQuoteAltLeft
             className="text-[#1e4620] mb-3 block mx-auto"
             size={40}
@@ -80,7 +102,7 @@ const Testimonial = () => {
               />
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

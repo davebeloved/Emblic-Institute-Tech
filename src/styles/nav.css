@@ -1,0 +1,19 @@
+/* nav bar  */
+.myNav.sticky {
+  background: #fff;
+  color: black !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+.myNav.sticky .logo,
+.myNav.sticky .toggle,
+.myNav.sticky .links,
+.myNav.sticky .signin {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .myNav.sticky .links,
+  .myNav.sticky .signin {
+    color: white !important;
+  }
+}

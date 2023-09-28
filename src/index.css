@@ -11,6 +11,7 @@
 }
 body {
   background-color: #ececec;
+  overflow-x: hidden;
 }
 
 @layer components {
@@ -73,6 +74,9 @@ header ul li a {
   header ul.flexSB {
     display: none;
   }
+  .header ul.flexSB {
+    display: none;
+  }
   header ul li {
     margin-bottom: 20px;
   }
@@ -92,6 +96,18 @@ header ul li a {
     width: 100%;
     background-color: #1e4620;
   }
+  .mobile-navB {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: #1e4620;
+    padding-left: 30px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -101,6 +117,7 @@ header ul li a {
   .hero {
     background-position: right;
     padding-top: 50%;
+    padding-right: 40px;
     height: 80vh;
   }
   .hero .row {
@@ -108,4 +125,20 @@ header ul li a {
   }
 }
 
-/* benefits of online training style section  */
+/* .test {
+  background: -webkit-linear-gradient(#355e3b, #355e3b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.about::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+
+  background-color: green;
+}

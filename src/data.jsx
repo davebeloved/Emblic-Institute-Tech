@@ -15,12 +15,14 @@ export const trainingBenefits = [
     label:
       "As a recent addition to our training platforms, our Online Training is a highly convenient option. Enrolled students can access comprehensive training materials, including well-prepared instructional videos, from the comfort of their chosen learning spaces. Further details are elaborated below.",
     src: Image3,
+    delays: 1,
   },
   {
     title: "Corporate Training",
     label:
       "Designed for employees of corporate institutions engaged in Information Technology fields, this training program equips them to become consummate professionals in their domain.",
     src: Image4,
+    delays: 1.3,
   },
 
   {
@@ -28,6 +30,7 @@ export const trainingBenefits = [
     label:
       "Our exceptional Information Technology Training is tailored for private individuals, affording them the privilege of one-on-one instructions and learning with our facilitators. This approach enables them to acquire their desired IT skills effectively.",
     src: Image6,
+    delays: 1.6,
   },
 
   {
@@ -35,6 +38,7 @@ export const trainingBenefits = [
     label:
       "With cutting-edge teaching facilities and meticulously curated learning materials, our learning environment at EIT fosters optimal growth and development within the realm of IT.",
     src: Image5,
+    delays: 1.9,
   },
 
   {
@@ -42,12 +46,14 @@ export const trainingBenefits = [
     label:
       "With cutting-edge teaching facilities and meticulously curated learning materials, our learning environment at EIT fosters optimal growth and development within the realm of IT.",
     src: Image2,
+    delays: 2.2,
   },
   {
     title: "Earn Certificates",
     label:
       "With cutting-edge teaching facilities and meticulously curated learning materials, our learning environment at EIT fosters optimal growth and development within the realm of IT.",
     src: Image1,
+    delays: 2.4,
   },
 ];
 
@@ -59,6 +65,7 @@ export const courses = [
     live_price: 220.66,
     rating: 1.5,
     numReview: 2,
+    delays: 0.2,
   },
   {
     name: "Back-End Development",
@@ -67,6 +74,7 @@ export const courses = [
     live_price: 220.66,
     rating: 2.5,
     numReview: 1,
+    delays: 0.4,
   },
   {
     name: "Full-Stack Development",
@@ -75,6 +83,7 @@ export const courses = [
     live_price: 441.32,
     rating: 3.5,
     numReview: 2,
+    delays: 0.6,
   },
   {
     name: "Ethical Hacking/Penetration Testing",
@@ -83,6 +92,7 @@ export const courses = [
     live_price: 753.48,
     rating: 4.5,
     numReview: 3,
+    delays: 0.8,
   },
 ];
 
@@ -121,12 +131,12 @@ export const links = [
   },
   {
     label: "About",
-    path: "#",
+    path: "/about",
   },
 
   {
     label: "Contact",
-    path: "#",
+    path: "/contact",
   },
 ];
 

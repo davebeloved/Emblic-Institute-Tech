@@ -5,10 +5,12 @@ import BestCourse from "../components/BestCourse";
 import PopularCourses from "../components/PopularCourses";
 import Testimonial from "../components/Testimonial";
 import Faq from "../components/Faq";
+import Nav from "../components/Nav";
 
 const Home = () => {
   return (
     <>
+      <Nav />
       <Hero />
       <Benefits />
       <BestCourse />
