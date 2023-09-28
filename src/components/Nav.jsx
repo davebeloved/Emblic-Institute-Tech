@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Head from "./Head";
 import { AiOutlineBars } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
+import { links } from "../data";
 
 const Nav = () => {
   const [click, setClick] = useState(false);
@@ -21,22 +22,14 @@ const Nav = () => {
                 }
                 onClick={() => setClick(false)}
               >
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/courses">All Courses</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <Link to="/team">Team</Link>
-                </li>
-
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
+                {links.map((link, i) => {
+                  const { label, path } = link;
+                  return (
+                    <li key={i}>
+                      <Link>{label}</Link>
+                    </li>
+                  );
+                })}
               </ul>
               <div className="start py-[30px] px-[40px] lg:px-[70px]">
                 <div className="button">GET CERTIFICATE</div>

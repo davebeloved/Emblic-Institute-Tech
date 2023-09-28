@@ -123,12 +123,9 @@ export const links = [
     label: "About",
     path: "#",
   },
+
   {
-    label: "Team",
-    path: "#",
-  },
-  {
-    label: "Contaact",
+    label: "Contact",
     path: "#",
   },
 ];
