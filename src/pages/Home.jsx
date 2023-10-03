@@ -6,6 +6,7 @@ import PopularCourses from "../components/PopularCourses";
 import Testimonial from "../components/Testimonial";
 import Faq from "../components/Faq";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <PopularCourses />
       <Testimonial />
       <Faq />
+      <Footer />
     </>
   );
 };

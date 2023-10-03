@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import AboutImg from "../../public/images/abt.jpg";
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
@@ -143,6 +144,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

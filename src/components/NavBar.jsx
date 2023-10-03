@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { links } from "../data";
 import "../styles/nav.css";
@@ -7,6 +7,8 @@ import { AiOutlineBars } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
+  const navigate = useNavigate();
+
   window.addEventListener("scroll", () => {
     const header = document.querySelector(".myNav");
     header.classList.toggle("sticky", window.scrollY > 0);
@@ -48,7 +50,10 @@ const NavBar = () => {
               );
             })}
             <div>
-              <button className=" bg-[#4caf50] hover:shadow-lg hover:shadow-[#1e4620]/50  px-7 py-2 btn-primary text-white lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold border-none">
+              <button
+                onClick={() => navigate("/signup")}
+                className=" bg-[#4caf50] hover:shadow-lg hover:shadow-[#1e4620]/50  px-7 py-2 btn-primary text-white lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold border-none"
+              >
                 Sign Up
               </button>
             </div>

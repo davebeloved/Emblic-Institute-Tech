@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import NavBar from "../components/NavBar";
 import ContactUs from "../components/ContactUs";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
@@ -24,6 +25,7 @@ const Contact = () => {
         </motion.h1>
         <ContactUs />
       </div>
+      <Footer />
     </>
   );
 };
