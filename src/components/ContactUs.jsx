@@ -148,21 +148,21 @@ const ContactUs = () => {
                 onChange={(e) => setFirst_name(e.target.value)}
                 value={first_name}
                 placeholder="First Name"
-                className="bg-gray-200 w-full border rounded-md p-3 mb-3 outline-none   "
+                className="bg-gray-200 w-full  rounded-md p-3 mb-3 outline-none   "
               />
               <input
                 type="text"
                 placeholder="Mail"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
-                className="bg-gray-200 w-full border rounded-md p-3 mb-3 outline-none  "
+                className="bg-gray-200 w-full  rounded-md p-3 mb-3 outline-none  "
               />
               <input
                 type="text"
                 placeholder="Phone number"
                 onChange={(e) => setPhone_number(e.target.value)}
                 value={phone_number}
-                className="bg-gray-200 w-full border rounded-md p-3 mb-3 outline-none  "
+                className="bg-gray-200 w-full  rounded-md p-3 mb-3 outline-none  "
               />
               <textarea
                 name="message"
@@ -172,7 +172,7 @@ const ContactUs = () => {
                 value={message}
                 rows="10"
                 placeholder="Message"
-                className="bg-gray-200 w-full border rounded-md p-3 mb-3 outline-none  "
+                className="bg-gray-200 w-full  rounded-md p-3 mb-3 outline-none  "
               ></textarea>
               <button
                 // onClick={handleSubmitSignUp}
