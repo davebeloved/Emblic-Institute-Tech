@@ -20,7 +20,7 @@ const SignIn = () => {
           <h2 className="text-center font-semibold font-clash text-sm md:text-2xl text-[#fff] leading-none">
             Welcom Back to EIT
           </h2>
-          <p className="font-clash leading-none text-white text-[12px] md:text-lg">
+          <p className="font-clash leading-none text-white text-[12px] md:text-sm text-center">
             Kindly fill in your details to sign in to your account
           </p>
           <form className="mt-10 w-full text-white">
