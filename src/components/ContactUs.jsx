@@ -194,10 +194,10 @@ const ContactUs = () => {
                 className="bg-transparent w-full border rounded-sm p-3 mb-3 outline-none placeholder:text-white text-white"
               ></textarea>
               <button
-                onClick={handleSubmitSignUp}
+                // onClick={handleSubmitSignUp}
                 className="btn block mx-auto font-monts lg:block outline-none btn-primary placeholder:text-white text-white"
               >
-                Register Now
+                Submit
               </button>
             </div>
           </form>

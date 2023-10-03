@@ -20,7 +20,7 @@ const Hero = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="text-2xl mt-10 lg:mt-0 md:text-4xl lg:text-5xl font-clash   font-bold "
+            className="text-2xl mt-10 lg:mt-0 md:text-4xl lg:text-5xl font-clash    font-bold "
           >
             BEST ONLINE EDUCATION EXPERTISE
           </motion.h1>

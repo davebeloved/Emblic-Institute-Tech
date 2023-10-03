@@ -199,7 +199,7 @@ const Footer = () => {
                   </li>
                   <li className="flex justify-center lg:justify-start gap-x-3 font-inter">
                     <AiOutlineMail size={25} className="text-[#1e4620]" />
-                    info@emblictech.com
+                    eit@emblictech.com
                   </li>
                 </ul>
                 <ul className=" text-center lg:text-left">
@@ -217,7 +217,7 @@ const Footer = () => {
                   </li>
                   <li className="flex justify-center lg:justify-start gap-x-3 font-inter">
                     <AiOutlineMail size={25} className="text-[#1e4620]" />
-                    info@emblictech.com
+                    eit@emblictech.com
                   </li>
                 </ul>
               </div>
