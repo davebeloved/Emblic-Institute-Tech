@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <>
       <section className="hero  lg:pr-[50px] bg-[#4caf50]">
-        <div className="row px-5 lg:px-10 text-center lg:text-left">
+        <div className="row px-3 w-[70%] lg:px-10 text-center lg:text-left">
           <motion.h1
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -34,7 +34,7 @@ const Hero = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="font-inter font-bold text-[#1e4620] lg:text-white text-[12px] leading-4 lg:text-base"
+            className="font-inter font-bold text-[#1e4620] lg:text-white text-[12px] leading-4 lg:text-base lg:w-[70%]"
           >
             We cultivate within our students an ideal learning culture and a
             wholesome educational environment that nurtures ongoing learning and

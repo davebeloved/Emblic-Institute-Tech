@@ -117,7 +117,7 @@ header ul li a {
   .hero {
     background-position: right;
     padding-top: 50%;
-    padding-right: 40px;
+    /* padding-right: 40px; */
     height: 80vh;
   }
   .hero .row {
