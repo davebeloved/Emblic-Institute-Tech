@@ -64,7 +64,7 @@ const About = () => {
                   ease: "easeIn",
                   duration: 1,
                 }}
-                className="font-inter leading-none lg:leading-7 text-[12px] lg:text-lg"
+                className="font-inter leading-7  text-[12px] lg:text-lg"
               >
                 At Emblic Institute of Technology (EIT), we cultivate within our
                 students an ideal learning culture and a wholesome educational
@@ -103,7 +103,7 @@ const About = () => {
                   ease: "easeIn",
                   duration: 1,
                 }}
-                className="font-inter leading-none lg:leading-7 text-[12px] lg:text-lg"
+                className="font-inter leading-7 text-[12px] lg:text-lg"
               >
                 Our vision is to become the Foremost I.T. refinery in Africa
                 where individuals are refined and equipped with technological
@@ -134,7 +134,7 @@ const About = () => {
                   ease: "easeIn",
                   duration: 1,
                 }}
-                className="font-inter leading-none lg:leading-7 text-[12px] lg:text-lg"
+                className="font-inter leading-7 text-[12px] lg:text-lg"
               >
                 The program's primary objective is to unite individuals who
                 share a common interest in web development and information
