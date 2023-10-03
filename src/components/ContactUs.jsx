@@ -16,25 +16,6 @@ const ContactUs = () => {
 
   const handleSubmitSignUp = async (e) => {
     e.preventDefault();
-    try {
-      const { data } = await axios.post(
-        "https://backend.getlinked.ai/hackathon/contact-form",
-        {
-          email,
-          phone_number,
-          first_name,
-          message,
-        }
-      );
-
-      console.log("sucesss");
-      setEmail("");
-      setFirst_name("");
-      setPhone_number("");
-      setMessage("");
-    } catch (error) {
-      // console.log(error)
-    }
   };
   return (
     <div className="overflow-hidden">
@@ -88,7 +69,7 @@ const ContactUs = () => {
               <h3 className=" font-mono text-[12px] lg:text-lg font-semibold">
                 Email Us:
               </h3>
-              <span>info@emblictech.com</span>
+              <span>eit@emblictech.com</span>
             </div>
             <div>
               <h2 className="font-mono text-[12px] lg:text-xl font-semibold">
@@ -115,7 +96,7 @@ const ContactUs = () => {
               <h3 className=" font-mono text-[12px] lg:text-lg font-semibold">
                 Email Us:
               </h3>
-              <span>info@emblictech.com</span>
+              <span>eit@emblictech.com</span>
             </div>
             <div>
               <h3 className="font-mono text-[12px] lg:text-lg">
