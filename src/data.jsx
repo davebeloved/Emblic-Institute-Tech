@@ -94,6 +94,114 @@ export const courses = [
     numReview: 3,
     delays: 0.8,
   },
+  {
+    name: "Web/App Development I (Front End + Back End) Full Stack",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
+  {
+    name: "Web/App Development II (Front End + Back End) MERN Stack",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
+  {
+    name: "Web/App Development III (Font End + Back End) Python",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
+  {
+    name: "Android Application Development",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
+  {
+    name: "Node Js",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
+  {
+    name: "Data Science",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
+  {
+    name: "Data Marketting",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
+  {
+    name: "Software Development (Java)",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
+  {
+    name: "Software Development (NET)",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
+  {
+    name: "Computer/ Hacking Forensics",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
+  {
+    name: " Corporate Information/ Cyber Security",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
+  {
+    name: " Microsoft Applications",
+    src: Frontend,
+    online_price: 376.74,
+    live_price: 753.48,
+    rating: 4.5,
+    numReview: 3,
+    delays: 0.8,
+  },
 ];
 
 export const testimonies = [
@@ -127,7 +235,7 @@ export const links = [
   },
   {
     label: "All Courses",
-    path: "#",
+    path: "all-courses",
   },
   {
     label: "About",
@@ -142,19 +250,66 @@ export const links = [
 
 export const faqs = [
   {
-    question: "How do i Register?",
-    answer: "Click on the register button to start your registration process.",
+    question: "What is EIT?",
+    answer:
+      "   EIT stands for Emblic Institute of Technology, an advanced online and onsite training platform designed to offer a personalized and engaging learning experience.",
   },
   {
-    question: "How do i Register?",
-    answer: "Click on the register button to start your registration process.",
+    question: "How do I access the training courses on EIT Online Education?",
+    answer:
+      "   To access our training courses, you need to register for any course of your interest, pay for the course, and then you can start learning. If you haven't registered yet, you can sign up for an account on our platform.",
+  },
+
+  {
+    question: "Can I access the training on mobile devices?",
+    answer:
+      "   Yes, EIT online training is mobile-friendly, making it convenient for you to access your courses on smartphones and tablets..",
   },
   {
-    question: "How do i Register?",
-    answer: "Click on the register button to start your registration process.",
+    question: "What types of courses are available on EIT Online Education?",
+    answer:
+      "    EIT Online Education offers a wide range of courses in Technology, including front-end development, back-end development, and more. You can explore our course catalogue above to find the one that matches your interests and goals.",
   },
   {
-    question: "How do i Register?",
-    answer: "Click on the register button to start your registration process.",
+    question: "How does adaptive learning work in EIT Online Education?",
+    answer:
+      "   EIT Online Education uses adaptive learning algorithms to personalize your learning experience. It assesses your knowledge and progress and adjusts the course content to match your level, ensuring an efficient and tailored learning journey.",
+  },
+  {
+    question: "Are there live instructors or mentors available for support?",
+    answer:
+      "    While EIT online Education primarily offers self-paced learning, some courses may include access to live instructors or mentors for additional guidance and support. Check the course details for specific information.",
+  },
+  {
+    question:
+      "Can I track my progress and achievements in EIT Online Education?",
+    answer:
+      "    Yes, our platform allows you to track your progress, view completed modules, and earn certificates upon course completion. Your achievements are stored in your profile for easy reference.",
+  },
+  {
+    question: "Is there technical support available if I encounter issues?",
+    answer:
+      " Absolutely. We have a dedicated technical support team ready to assist you with any technical difficulties or inquiries you may have. You can reach out through our support channels provided on the platform.",
+  },
+  {
+    question: "How do I make payments for courses on EIT Online Education?",
+    answer:
+      "   You can make secure payments for courses using various payment methods, including credit/debit cards and online payment gateways. Detailed payment instructions are available during the course enrollment process.",
+  },
+  {
+    question:
+      "Is there a refund policy in case I am not satisfied with a course?",
+    answer:
+      "   No, we do not offer refunds for our courses. You can review our Terms of Use on our website for information on the conditions and process for registration.",
+  },
+  {
+    question: "Can I collaborate with other learners on EIT Online Education?",
+    answer:
+      "Some courses may offer collaborative learning features, such as discussion forums or group projects. Check the course description to see if collaborative elements are included.",
+  },
+  {
+    question: "How can I stay updated on new courses and platform updates?",
+    answer:
+      'To stay informed about new courses, platform updates, and promotions, subscribe to our newsletter or follow us on social media platforms. You can also check the "News and Updates" section on our website.',
   },
 ];

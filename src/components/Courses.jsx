@@ -1,30 +1,13 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { courses } from "../data";
-import { BsArrowRight } from "react-icons/bs";
 import Rating from "./Rating";
-import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 
-const PopularCourses = () => {
-  const navigate = useNavigate();
+const Courses = () => {
   return (
-    <div className="px-6 lg:px-10 overflow-hidden">
-      <motion.h1
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{
-          delay: 0.2,
-          x: { type: "spring", stiffness: 60 },
-          opacity: { duration: 1 },
-          ease: "easeIn",
-          duration: 1,
-        }}
-        className="text-center font-semibold font-clash text-2xl md:text-3xl text-[#1e4620] mb-10"
-      >
-        EXPLORE OUR POPULAR COURSES
-      </motion.h1>
-      <div className="grid grid-cols-1 gap-5 lg:grid-cols-4 ">
-        {courses.slice(0, 4).map((course, i) => {
+    <div className="px-6 lg:px-10">
+      <div className="grid grid-cols-1 gap-9 lg:grid-cols-4 ">
+        {courses.map((course, i) => {
           const {
             name,
             src,
@@ -74,28 +57,8 @@ const PopularCourses = () => {
           );
         })}
       </div>
-
-      <motion.button
-        onClick={() => navigate("all-courses")}
-        initial={{ y: 100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{
-          delay: 0.3,
-          y: { type: "spring", stiffness: 60 },
-          opacity: { duration: 1 },
-          ease: "easeIn",
-          duration: 1,
-        }}
-        className="btn-secondary  mx-auto bg-transparent font-clash  border-2 border-[#1e4620] flex items-center gap-x-3 my-14"
-      >
-        SEE ALL COURSES{" "}
-        <span className="bg-[#1e4620] w-7  h-7 rounded-full flex items-center justify-center">
-          {" "}
-          <BsArrowRight className="text-white" />
-        </span>
-      </motion.button>
     </div>
   );
 };
 
-export default PopularCourses;
+export default Courses;

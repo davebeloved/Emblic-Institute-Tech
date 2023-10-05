@@ -61,7 +61,7 @@ const Faq = () => {
                     {ques.question}
                     <button
                       onClick={() => show(i)}
-                      className="font-clash font-bold text-xl bg-[#4caf50] w-8 h-8 rounded-full flex items-center justify-center text-white"
+                      className="font-clash font-bold text-xl bg-[#4caf50] w-8 h-7 p-2 lg:h-8 rounded-full flex items-center justify-center text-white"
                     >
                       {open === i ? "-" : "+"}
                     </button>
@@ -87,6 +87,7 @@ const Faq = () => {
             }}
             src={FaqImg}
             alt="frequently ask question image"
+            className="w-full lg:h-[70%] object-cover object-center"
           />
         </div>
       </div>
