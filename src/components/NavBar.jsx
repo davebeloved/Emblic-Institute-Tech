@@ -21,7 +21,7 @@ const NavBar = () => {
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-x-3">
           {/* Logo */}
-          <img className="" src={logo} alt="Logo" />
+          <img className="w-60 lg:80" src={logo} alt="Logo" />
           <div>
             {/* <h2 className="logo text-white font-bold text-[12px] lg:text-lg font-monts">
               EMBLIC-TECH
@@ -45,7 +45,7 @@ const NavBar = () => {
               const { label, path } = link;
               return (
                 <li key={i}>
-                  <Link className="text-black links font-inter" to={path}>
+                  <Link className="text-white lg:text-black links font-inter" to={path}>
                     {label}
                   </Link>
                 </li>
@@ -68,8 +68,8 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
-      <button className="toggle  mt-12 mr-3" onClick={() => setClick(!click)}>
-        {click ? <FaTimes /> : <AiOutlineBars />}
+      <button className="toggle text-black  lg:mt-12 mr-3" onClick={() => setClick(!click)}>
+        {click ? <FaTimes className="text-black"/> : <AiOutlineBars />}
       </button>
     </nav>
   );

@@ -14,11 +14,6 @@ const App = () => {
   const navigate = useNavigate()
   const {token} = useStateContext()
 
-  useEffect(()=>{
-      if (token) {
-        navigate("/");
-      }
-  }, [])
   return (
     <div>
       <Routes>
