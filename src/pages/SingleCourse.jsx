@@ -19,13 +19,13 @@ const SingleCourse = () => {
     <>
       <NavBar />
       <div className="overflow-hidden py-24 ">
-        <div className="flex  gap-x-12 linear px-6 lg:px-10 py-24">
+        <div className="flex flex-col lg:flex-row gap-y-24  gap-x-12 linear px-6 lg:px-10 py-24">
           <div className=" w-full lg:w-1/2">
             <h1 className="text-white font-clash text-xl lg:text-5xl">
               {singleCourse.name}
             </h1>
             <p className="text-white">{singleCourse.text}</p>
-            <div className="-ml-[440px] ">
+            <div className="flex -ml-5">
               <Rating
                 value={singleCourse.rating}
                 text={`${singleCourse.numReview} numreview`}
@@ -42,7 +42,7 @@ const SingleCourse = () => {
               ENROLL NOW
             </button>
           </div>
-          <div className="bg-white ml-32 w-80  pb-6 rounded-md relative h-80">
+          <div className="bg-white lg:ml-32 w-80  pb-6 rounded-md relative h-80">
             <div className="relative w-full ">
               <div className=" ">
                 <video src={Vid} className="  w-full"></video>
@@ -51,7 +51,7 @@ const SingleCourse = () => {
                   className="bg-[#1e4620] text-white rounded-full w-16 h-16 absolute top-[50px] left-[130px] cursor-pointer"
                 />
               </div>
-              <h4 className="absolute bottom-0 font-inter text-center w-full text-[#1e4620] font-bold text-xl">
+              <h4 className="absolute bottom-0 font-inter text-center w-full text-[#1e4620] font-bold text-sm">
                 Preview course
               </h4>
             </div>
