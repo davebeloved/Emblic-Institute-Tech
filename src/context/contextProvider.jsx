@@ -9,6 +9,7 @@ export const StateContextProvider = ({ children }) => {
   const [pwd, setPwd] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [succeed, setSucceed] = useState(null);
   // const [loginUser, setLoginUser] = useState(
   //   JSON.parse(localStorage.getItem("user") || "")
   // );
@@ -33,11 +34,16 @@ export const StateContextProvider = ({ children }) => {
         "https://apiservice.estudylite.com/api/login",
         credentials
       );
-
-      localStorage.setItem("user", JSON.stringify(response.data));
-      navigate("/");
-      console.log("sucesssssss");
-      console.log("dataaaaa", response.data);
+      if (response) {
+        localStorage.setItem("user", JSON.stringify(response.data));
+        setSucceed("Login Successfully, Redirecting to Home Page");
+        setTimeout(() => {
+          navigate("/");
+          window.location.reload();
+        }, 3000);
+        console.log("sucesssssss");
+        console.log("dataaaaa", response.data);
+      }
       setLoading(false);
     } catch (error) {
       setLoading(false);
@@ -46,10 +52,20 @@ export const StateContextProvider = ({ children }) => {
     }
   };
 
-  console.log('adddedddd', token);
+  console.log("adddedddd", token);
   return (
     <stateContext.Provider
-      value={{ email, setEmail, pwd, setPwd, handleSubmit, error, loading, token }}
+      value={{
+        email,
+        setEmail,
+        pwd,
+        setPwd,
+        handleSubmit,
+        error,
+        loading,
+        token,
+        succeed,
+      }}
     >
       {children}
     </stateContext.Provider>

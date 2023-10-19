@@ -135,7 +135,8 @@ const SignUp = () => {
         setSuceed(response.data.message);
         setTimeout(() => {
           navigate("/");
-        }, 2000);
+          window.location.reload();
+        }, 3000);
         console.log("sucesssssss");
         console.log("dataaaaa", response.data);
       }
@@ -215,22 +216,6 @@ const SignUp = () => {
       <div className="">
         <div className="bg-[#0294DA]   p-5 rounded-lg shadow-md flex flex-col items-center py-6 lg:py-12">
           <form onSubmit={handleSubmit} className=" w-full text-white form">
-            <p
-              ref={errRef}
-              className={error ? "errmsg" : "offscreen"}
-              aria-live="assertive"
-            >
-              {/* {errMsg} */}
-              {error}
-            </p>
-            <p
-              ref={errRef}
-              className={suceed ? "succedmsg" : "offscreen"}
-              aria-live="assertive"
-            >
-              {/* {errMsg} */}
-              {suceed}
-            </p>
             <h1 className="font-clash text-center md:text-2xl">Register</h1>
             <label htmlFor="fullname" className="flex items-center gap-x-3">
               Full Name:
@@ -459,6 +444,22 @@ const SignUp = () => {
             >
               {loading ? <Loading /> : "Sign up"}
             </button>
+            <p
+              ref={errRef}
+              className={error ? "errmsg" : "offscreen"}
+              aria-live="assertive"
+            >
+              {/* {errMsg} */}
+              {error}
+            </p>
+            <p
+              ref={errRef}
+              className={suceed ? "succedmsg" : "offscreen"}
+              aria-live="assertive"
+            >
+              {/* {errMsg} */}
+              {suceed}
+            </p>
           </form>
           <p className="font-clash text-white text-xs">
             Already have an Account?

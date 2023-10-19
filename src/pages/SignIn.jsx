@@ -6,8 +6,16 @@ import { useStateContext } from "../context/contextProvider";
 import Loading from "../components/Loading";
 
 const SignIn = () => {
-  const { email, setEmail, pwd, setPwd, handleSubmit, error, loading } =
-    useStateContext();
+  const {
+    email,
+    setEmail,
+    pwd,
+    setPwd,
+    handleSubmit,
+    error,
+    loading,
+    succeed,
+  } = useStateContext();
 
   console.log(error);
   return (
@@ -26,6 +34,14 @@ const SignIn = () => {
             >
               {/* {errMsg} */}
               {error}
+            </p>
+            <p
+              // ref={errRef}
+              className={succeed ? "succedmsg" : "offscreen"}
+              aria-live="assertive"
+            >
+              {/* {errMsg} */}
+              {succeed}
             </p>
             <div className="flex flex-col items-center lg:flex-row gap-x-2"></div>
             <div className="flex flex-col w-full mb-5">
@@ -49,7 +65,7 @@ const SignIn = () => {
                 onChange={(e) => setPwd(e.target.value)}
                 name="pwd"
                 value={pwd}
-                type="text"
+                type="password"
                 placeholder="*******"
                 className="w-full  p-2 rounded-md text-black bg-gray-200 outline-none"
               />
@@ -63,7 +79,7 @@ const SignIn = () => {
                   : "text-opacity-100 btn-primary font-inter flex justify-center w-full"
               }
             >
-              {loading? <Loading /> : 'Sign in'}
+              {loading ? <Loading /> : "Sign in"}
             </button>
           </form>
           <p className="font-clash text-white mt-5 text-xs">
