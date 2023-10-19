@@ -12,10 +12,9 @@ export const StateContextProvider = ({ children }) => {
   // const [loginUser, setLoginUser] = useState(
   //   JSON.parse(localStorage.getItem("user") || "")
   // );
+  const [token, setTokent] = useState(JSON.parse(localStorage.getItem("user")));
 
   const navigate = useNavigate();
-
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,7 +27,7 @@ export const StateContextProvider = ({ children }) => {
       email,
       password: pwd,
     };
-    setLoading(true)
+    setLoading(true);
     try {
       const response = await axios.post(
         "https://apiservice.estudylite.com/api/login",
@@ -39,16 +38,18 @@ export const StateContextProvider = ({ children }) => {
       navigate("/");
       console.log("sucesssssss");
       console.log("dataaaaa", response.data);
-      setLoading(false)
+      setLoading(false);
     } catch (error) {
-      setLoading(false)
+      setLoading(false);
       console.log(error.response.data);
       setError(error.response.data.message);
     }
   };
+
+  console.log('adddedddd', token);
   return (
     <stateContext.Provider
-      value={{ email, setEmail, pwd, setPwd, handleSubmit, error, loading }}
+      value={{ email, setEmail, pwd, setPwd, handleSubmit, error, loading, token }}
     >
       {children}
     </stateContext.Provider>

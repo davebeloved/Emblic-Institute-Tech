@@ -3,8 +3,13 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import "../styles/hero.css";
 import Nav from "./Nav";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { useStateContext } from "../context/contextProvider";
 
 const Hero = () => {
+
+  const {token} = useStateContext()
+  const navigate = useNavigate();
   return (
     <>
       <section className="hero  lg:pr-[50px] bg-[#0294DA]">
@@ -40,21 +45,25 @@ const Hero = () => {
             swift advancement.
           </motion.p>
           <div className="flex items-center justify-center lg:justify-start gap-x-5 mt-5">
+            {!token && (
+              <motion.button
+                onClick={() => navigate("/signup")}
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.3,
+                  y: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 1 },
+                  ease: "easeIn",
+                  duration: 1,
+                }}
+                className="btn-primary hover:bg-[#0f2310]  transition-colors duration-300 ease-in"
+              >
+                SIGN UP NOW <AiOutlineArrowRight />
+              </motion.button>
+            )}
             <motion.button
-              initial={{ y: 100, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{
-                delay: 0.3,
-                y: { type: "spring", stiffness: 60 },
-                opacity: { duration: 1 },
-                ease: "easeIn",
-                duration: 1,
-              }}
-              className="btn-primary hover:bg-[#0f2310]  transition-colors duration-300 ease-in"
-            >
-              GET STARTED NOW <AiOutlineArrowRight />
-            </motion.button>
-            <motion.button
+              onClick={() => navigate("/all-courses")}
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{

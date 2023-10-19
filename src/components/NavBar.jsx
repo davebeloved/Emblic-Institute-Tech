@@ -5,9 +5,11 @@ import { links } from "../data";
 import "../styles/nav.css";
 import { AiOutlineBars } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
+import { useStateContext } from "../context/contextProvider";
 
 const NavBar = () => {
   const navigate = useNavigate();
+  const { token } = useStateContext();
 
   window.addEventListener("scroll", () => {
     const header = document.querySelector(".myNav");
@@ -50,12 +52,18 @@ const NavBar = () => {
               );
             })}
             <div>
-              <button
-                onClick={() => navigate("/signup")}
-                className=" bg-[#0294da] hover:shadow-lg hover:shadow-[#1e4620]/50  px-7 py-2 btn-primary text-white lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold border-none"
-              >
-                Sign Up
-              </button>
+              {token ? (
+                <h2 className="uppercase ml-5">
+                  Welcome {token.user.fullname}
+                </h2>
+              ) : (
+                <button
+                  onClick={() => navigate("/signup")}
+                  className=" bg-[#0294da] hover:shadow-lg hover:shadow-[#1e4620]/50  px-7 py-2 btn-primary text-white lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold border-none"
+                >
+                  Sign Up
+                </button>
+              )}
             </div>
           </ul>
         </div>
