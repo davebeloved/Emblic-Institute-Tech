@@ -1,6 +1,7 @@
 import React from "react";
-import Image from "../../public/images/abouts.png";
+// import BenefitImg from "../assets/.png";
 import { trainingBenefits } from "../data";
+import Benefit from '../../public/images/about.png'
 import { motion } from "framer-motion";
 
 const Benefits = () => {
@@ -17,7 +18,7 @@ const Benefits = () => {
             ease: "easeIn",
             duration: 1,
           }}
-          src={Image}
+          src={Benefit}
           alt=""
           className="w-full h-[85%] object-cover object-center"
         />

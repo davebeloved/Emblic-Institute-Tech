@@ -54,14 +54,14 @@ const Faq = () => {
                   ease: "easeIn",
                   duration: 1,
                 }}
-                className="bg-[#4caf50] p-3 rounded-md shadow-md"
+                className="bg-[#0294DA] p-3 rounded-md shadow-md"
               >
                 <div className="bg-white p-5 rounded-md">
                   <h2 className="  flex items-center justify-between font-inter font-semibold text-lg text-[#1e4620]">
                     {ques.question}
                     <button
                       onClick={() => show(i)}
-                      className="font-clash font-bold text-xl bg-[#4caf50] w-8 h-7 p-2 lg:h-8 rounded-full flex items-center justify-center text-white"
+                      className="font-clash font-bold text-xl bg-[#0294DA] w-8 h-7 p-2 lg:h-8 rounded-full flex items-center justify-center text-white"
                     >
                       {open === i ? "-" : "+"}
                     </button>

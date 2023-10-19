@@ -59,6 +59,7 @@ export const trainingBenefits = [
 
 export const courses = [
   {
+    id: 1,
     name: "Front-End Development",
     src: Frontend,
     online_price: 110.33,
@@ -66,8 +67,11 @@ export const courses = [
     rating: 1.5,
     numReview: 2,
     delays: 0.2,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
+    desc: "",
   },
   {
+    id: 2,
     name: "Back-End Development",
     src: Backend,
     online_price: 110.33,
@@ -75,8 +79,10 @@ export const courses = [
     rating: 2.5,
     numReview: 1,
     delays: 0.4,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 3,
     name: "Full-Stack Development",
     src: Fullstack,
     online_price: 220.66,
@@ -84,8 +90,10 @@ export const courses = [
     rating: 3.5,
     numReview: 2,
     delays: 0.6,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 4,
     name: "Ethical Hacking/Penetration Testing",
     src: Ethical,
     online_price: 376.74,
@@ -93,8 +101,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 5,
     name: "Web/App Development I (Front End + Back End) Full Stack",
     src: Frontend,
     online_price: 376.74,
@@ -102,8 +112,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 6,
     name: "Web/App Development II (Front End + Back End) MERN Stack",
     src: Frontend,
     online_price: 376.74,
@@ -111,8 +123,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 7,
     name: "Web/App Development III (Font End + Back End) Python",
     src: Frontend,
     online_price: 376.74,
@@ -120,8 +134,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 8,
     name: "Android Application Development",
     src: Frontend,
     online_price: 376.74,
@@ -129,8 +145,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 9,
     name: "Node Js",
     src: Frontend,
     online_price: 376.74,
@@ -138,8 +156,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 10,
     name: "Data Science",
     src: Frontend,
     online_price: 376.74,
@@ -147,8 +167,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 11,
     name: "Data Marketting",
     src: Frontend,
     online_price: 376.74,
@@ -156,8 +178,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 12,
     name: "Software Development (Java)",
     src: Frontend,
     online_price: 376.74,
@@ -165,8 +189,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 13,
     name: "Software Development (NET)",
     src: Frontend,
     online_price: 376.74,
@@ -174,8 +200,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 14,
     name: "Computer/ Hacking Forensics",
     src: Frontend,
     online_price: 376.74,
@@ -183,8 +211,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 15,
     name: " Corporate Information/ Cyber Security",
     src: Frontend,
     online_price: 376.74,
@@ -192,8 +222,10 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
   {
+    id: 16,
     name: " Microsoft Applications",
     src: Frontend,
     online_price: 376.74,
@@ -201,6 +233,7 @@ export const courses = [
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
+    text: "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps",
   },
 ];
 
@@ -235,7 +268,7 @@ export const links = [
   },
   {
     label: "All Courses",
-    path: "all-courses",
+    path: "/all-courses",
   },
   {
     label: "About",

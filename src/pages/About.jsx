@@ -20,7 +20,7 @@ const About = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="text-center font-semibold font-clash text-2xl md:text-3xl text-[#1e4620] mb-10 about relative"
+            className="text-center font-semibold font-clash text-2xl md:text-3xl text-[#0294da] mb-10 about relative"
           >
             ABOUT US
           </motion.h1>

@@ -15,18 +15,18 @@ const NavBar = () => {
   });
   const [click, setClick] = useState(false);
   return (
-    <nav className="py-2 px-6 lg:px-10 fixed top-0 left-0 w-full  z-[1000] bg-[#1e4620] myNav">
+    <nav className="py-2 px-6 lg:px-10 fixed top-0 left-0 w-full  z-[1000] bg-[#fff]  myNav">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-x-3">
           {/* Logo */}
-          <img className="w-20" src={logo} alt="Logo" />
+          <img className="" src={logo} alt="Logo" />
           <div>
-            <h2 className="logo text-white font-bold text-[12px] lg:text-lg font-monts">
+            {/* <h2 className="logo text-white font-bold text-[12px] lg:text-lg font-monts">
               EMBLIC-TECH
             </h2>
             <h4 className="logo text-white font-bold text-[10px] lg:text-lg font-monts">
               ONLINE EDUCATION & LEARNING{" "}
-            </h4>
+            </h4> */}
           </div>
         </div>
         {/* <div className="flex items-center gap-x-10"> */}
@@ -42,8 +42,8 @@ const NavBar = () => {
             {links.map((link, i) => {
               const { label, path } = link;
               return (
-                <li>
-                  <Link className="text-white links font-inter" to={path}>
+                <li key={i}>
+                  <Link className="text-black links font-inter" to={path}>
                     {label}
                   </Link>
                 </li>
@@ -52,7 +52,7 @@ const NavBar = () => {
             <div>
               <button
                 onClick={() => navigate("/signup")}
-                className=" bg-[#4caf50] hover:shadow-lg hover:shadow-[#1e4620]/50  px-7 py-2 btn-primary text-white lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold border-none"
+                className=" bg-[#0294da] hover:shadow-lg hover:shadow-[#1e4620]/50  px-7 py-2 btn-primary text-white lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold border-none"
               >
                 Sign Up
               </button>

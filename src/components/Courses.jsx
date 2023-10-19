@@ -2,13 +2,16 @@ import { motion } from "framer-motion";
 import React from "react";
 import { courses } from "../data";
 import Rating from "./Rating";
+import { useNavigate } from "react-router-dom";
 
 const Courses = () => {
+  const navigate = useNavigate();
   return (
     <div className="px-6 lg:px-10">
       <div className="grid grid-cols-1 gap-9 lg:grid-cols-4 ">
-        {courses.map((course, i) => {
+        {courses.map((course) => {
           const {
+            id,
             name,
             src,
             online_price,
@@ -28,7 +31,7 @@ const Courses = () => {
                 ease: "easeIn",
                 duration: 1,
               }}
-              key={i}
+              key={id}
               className="text-center bg-white rounded-md p-5 shadow-md flex flex-col gap-y-2"
             >
               <div className="w-20 h-20 rounded-full overflow-hidden mx-auto">
@@ -50,7 +53,10 @@ const Courses = () => {
                   {`Live Training: $${live_price}`}
                 </h3>
               </div>
-              <button className="btn-primary text-white justify-center font-bold mt-5">
+              <button
+                onClick={() => navigate(`/course/${id}`)}
+                className="btn-primary text-white justify-center font-bold mt-5"
+              >
                 Enroll Now
               </button>
             </motion.div>

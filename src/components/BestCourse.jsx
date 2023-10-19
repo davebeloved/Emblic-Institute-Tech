@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const BestCourse = () => {
   return (
-    <div className=" overflow-hidden px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-16 mt-24 mb-28 lg:mb-12 pt-6  bg-[#4caf50]">
+    <div className=" overflow-hidden px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-16 mt-24 mb-28 lg:mb-12 pt-6  bg-[#0294DA]">
       <div className="">
         <motion.img
           initial={{ x: -100, opacity: 0 }}

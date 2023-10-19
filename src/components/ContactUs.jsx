@@ -33,7 +33,7 @@ const ContactUs = () => {
           className="relative  "
         >
           <div className="space-y-6 lg:ml-48  text-center lg:text-left">
-            <h1 className="text-[#4caf50] font-clash text-[20px] lg:text-[32px] unique font-bold">
+            <h1 className="text-[#0294da] font-clash text-[20px] lg:text-[32px] unique font-bold">
               Get in touch
             </h1>
             <div>
@@ -108,13 +108,13 @@ const ContactUs = () => {
                 Share on
               </h3>
               <div className="flex gap-x-5  justify-center lg:justify-start">
-                <div className="bg-[#4caf50] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
+                <div className="bg-[#0294da] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
                   <FaFacebookF size={25} className="cursor-pointer" />
                 </div>
-                <div className="bg-[#4caf50] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
+                <div className="bg-[#0294da] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
                   <FaInstagram size={25} className="cursor-pointer" />
                 </div>
-                <div className="bg-[#4caf50] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
+                <div className="bg-[#0294da] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
                   <FaTwitter size={25} className="cursor-pointer" />
                 </div>
               </div>
@@ -132,7 +132,7 @@ const ContactUs = () => {
             ease: "easeIn",
             duration: 1,
           }}
-          className="shd p-10 w-full h-[800px] relative bg-[#4caf50] rounded-lg shadow-md"
+          className="shd p-10 w-full h-[900px] relative bg-[#0294da] rounded-lg shadow-md"
         >
           <h2 className="text-white font-clash unique text-24px] lg:text-[32px]">
             Questions or need assistance?
@@ -176,7 +176,7 @@ const ContactUs = () => {
               ></textarea>
               <button
                 // onClick={handleSubmitSignUp}
-                className="btn block mx-auto font-monts lg:block outline-none btn-primary  text-white w-full"
+                className="btn block mx-auto font-semibold  lg:block outline-none btn-secondary  text-[#1e4620] font-inter w-full"
               >
                 Submit
               </button>

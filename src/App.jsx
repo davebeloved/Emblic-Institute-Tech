@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import AllCourses from "./pages/AllCourses";
+import SingleCourse from "./pages/SingleCourse";
 const App = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/all-courses" element={<AllCourses />} />
+        <Route path="course/:id" element={<SingleCourse />} />
       </Routes>
     </div>
   );

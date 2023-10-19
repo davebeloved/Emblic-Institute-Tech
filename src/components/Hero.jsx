@@ -1,6 +1,5 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import heroImg from "../assets/hero.png";
 import "../styles/hero.css";
 import Nav from "./Nav";
 import { motion } from "framer-motion";
@@ -8,7 +7,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
-      <section className="hero  lg:pr-[50px] bg-[#4caf50]">
+      <section className="hero  lg:pr-[50px] bg-[#0294DA]">
         <div className="row px-3 w-[70%] lg:px-10 text-center lg:text-left">
           <motion.h1
             initial={{ x: -100, opacity: 0 }}

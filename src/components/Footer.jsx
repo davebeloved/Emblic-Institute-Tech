@@ -69,7 +69,7 @@ const Footer = () => {
                 className="bg-transparent text-black p-3"
               />
               {/* <BsFillSendFill className="icon" /> */}
-              <button className="btn-primary bg-[#4caf50] mr-3 px-6">
+              <button className="btn-primary bg-[#0294DA] mr-3 px-6 mb-4">
                 Send
               </button>
             </motion.div>
@@ -105,13 +105,13 @@ const Footer = () => {
               </p>
 
               <div className="flex gap-x-5 mt-6 justify-center lg:justify-start">
-                <div className="bg-[#4caf50] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
+                <div className="bg-[#0294DA] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
                   <FaFacebookF size={25} className="cursor-pointer" />
                 </div>
-                <div className="bg-[#4caf50] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
+                <div className="bg-[#0294DA] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
                   <FaInstagram size={25} className="cursor-pointer" />
                 </div>
-                <div className="bg-[#4caf50] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
+                <div className="bg-[#0294DA] w-10 h-10 flex items-center justify-center rounded-full text-white hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out">
                   <FaTwitter size={25} className="cursor-pointer" />
                 </div>
               </div>
