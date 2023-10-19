@@ -17,6 +17,8 @@ import DataMarket from "../public/images/market.jpg";
 import Java from "../public/images/java.png";
 import Net from "../public/images/net.jpg";
 import Hack from "../public/images/hack.png";
+import Cyber from "../public/images/cyber.jpg";
+import Office from "../public/images/office.jpg";
 
 export const trainingBenefits = [
   {
@@ -225,7 +227,7 @@ export const courses = [
   {
     id: 15,
     name: " Corporate Information/ Cyber Security",
-    src: Frontend,
+    src: Cyber,
     online_price: "__",
     live_price: "__",
     rating: 4.5,
@@ -236,7 +238,7 @@ export const courses = [
   {
     id: 16,
     name: " Microsoft Applications",
-    src: Frontend,
+    src: Office,
     online_price: "__",
     live_price: "__",
     rating: 4.5,
