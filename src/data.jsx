@@ -8,13 +8,15 @@ import Frontend from "../public/images/frontend.jpg";
 import Backend from "../public/images/backend.jpg";
 import Ethical from "../public/images/ethical.webp";
 import Fullstack from "../public/images/fullstack.png";
-import Mern from '../public/images/mern.png'
-import Pyth from '../public/images/pyth.png'
-import Android from '../public/images/android.png'
-import Node from '../public/images/node.png'
-import DataScience from '../public/images/data.png'
-import DataMarket from '../public/images/market.jpg'
-import Java from '../public/images/java.png'
+import Mern from "../public/images/mern.png";
+import Pyth from "../public/images/pyth.png";
+import Android from "../public/images/android.png";
+import Node from "../public/images/node.png";
+import DataScience from "../public/images/data.png";
+import DataMarket from "../public/images/market.jpg";
+import Java from "../public/images/java.png";
+import Net from "../public/images/net.jpg";
+import Hack from "../public/images/hack.png";
 
 export const trainingBenefits = [
   {
@@ -201,7 +203,7 @@ export const courses = [
   {
     id: 13,
     name: "Software Development (NET)",
-    src: Frontend,
+    src: Net,
     online_price: "__",
     live_price: "__",
     rating: 4.5,
@@ -212,7 +214,7 @@ export const courses = [
   {
     id: 14,
     name: "Computer/ Hacking Forensics",
-    src: Frontend,
+    src: Hack,
     online_price: "__",
     live_price: "__",
     rating: 4.5,
