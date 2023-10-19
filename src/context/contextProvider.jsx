@@ -9,9 +9,9 @@ export const StateContextProvider = ({ children }) => {
   const [pwd, setPwd] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [loginUser, setLoginUser] = useState(
-    JSON.parse(localStorage.getItem("user") || "")
-  );
+  // const [loginUser, setLoginUser] = useState(
+  //   JSON.parse(localStorage.getItem("user") || "")
+  // );
 
   const navigate = useNavigate();
 
