@@ -8,6 +8,13 @@ import Frontend from "../public/images/frontend.jpg";
 import Backend from "../public/images/backend.jpg";
 import Ethical from "../public/images/ethical.webp";
 import Fullstack from "../public/images/fullstack.png";
+import Mern from '../public/images/mern.png'
+import Pyth from '../public/images/pyth.png'
+import Android from '../public/images/android.png'
+import Node from '../public/images/node.png'
+import DataScience from '../public/images/data.png'
+import DataMarket from '../public/images/market.jpg'
+import Java from '../public/images/java.png'
 
 export const trainingBenefits = [
   {
@@ -107,8 +114,8 @@ export const courses = [
     id: 5,
     name: "Web/App Development I (Front End + Back End) Full Stack",
     src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
@@ -117,9 +124,9 @@ export const courses = [
   {
     id: 6,
     name: "Web/App Development II (Front End + Back End) MERN Stack",
-    src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    src: Mern,
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
@@ -128,9 +135,9 @@ export const courses = [
   {
     id: 7,
     name: "Web/App Development III (Font End + Back End) Python",
-    src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    src: Pyth,
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
@@ -139,9 +146,9 @@ export const courses = [
   {
     id: 8,
     name: "Android Application Development",
-    src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    src: Android,
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
@@ -150,9 +157,9 @@ export const courses = [
   {
     id: 9,
     name: "Node Js",
-    src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    src: Node,
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
@@ -161,9 +168,9 @@ export const courses = [
   {
     id: 10,
     name: "Data Science",
-    src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    src: DataScience,
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
@@ -172,9 +179,9 @@ export const courses = [
   {
     id: 11,
     name: "Data Marketting",
-    src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    src: DataMarket,
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
@@ -183,9 +190,9 @@ export const courses = [
   {
     id: 12,
     name: "Software Development (Java)",
-    src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    src: Java,
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
@@ -195,8 +202,8 @@ export const courses = [
     id: 13,
     name: "Software Development (NET)",
     src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
@@ -206,8 +213,8 @@ export const courses = [
     id: 14,
     name: "Computer/ Hacking Forensics",
     src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
@@ -217,8 +224,8 @@ export const courses = [
     id: 15,
     name: " Corporate Information/ Cyber Security",
     src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
@@ -228,8 +235,8 @@ export const courses = [
     id: 16,
     name: " Microsoft Applications",
     src: Frontend,
-    online_price: '__',
-    live_price: '__',
+    online_price: "__",
+    live_price: "__",
     rating: 4.5,
     numReview: 3,
     delays: 0.8,
