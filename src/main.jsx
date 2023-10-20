@@ -7,7 +7,6 @@ import { Provider } from "react-redux";
 import { store } from "./store/store.js";
 import { StateContextProvider } from "./context/contextProvider.jsx";
 
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <HashRouter>
     <Provider store={store}>

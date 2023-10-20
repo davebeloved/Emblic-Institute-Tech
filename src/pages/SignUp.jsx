@@ -127,7 +127,13 @@ const SignUp = () => {
     try {
       const response = await axios.post(
         "https://apiservice.estudylite.com/api/register",
-        credentials
+        credentials,
+        {
+          headers: {
+            "Content-Type": "application/json;charset=UTF-8",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
       );
       if (response) {
         localStorage.setItem("user", JSON.stringify(response.data));

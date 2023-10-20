@@ -100,7 +100,7 @@ const ContactUs = () => {
             </div>
             <div>
               <h3 className="font-mono text-[12px] lg:text-lg">
-                We are open from Monday-Friday <br /> 08:99am-05:00pm
+                We are open from Monday-Friday <br /> 08:00am-05:00pm
               </h3>
             </div>
             <div>

@@ -37,7 +37,11 @@ const Nav = () => {
               className="toggle  mt-12 mr-3"
               onClick={() => setClick(!click)}
             >
-              {click ? <FaTimes /> : <AiOutlineBars />}
+              {click ? (
+                <FaTimes className="text-white" />
+              ) : (
+                <AiOutlineBars className="text-white" />
+              )}
             </button>
           </nav>
         </header>

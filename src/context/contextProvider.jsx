@@ -24,6 +24,7 @@ export const StateContextProvider = ({ children }) => {
       return;
     }
 
+
     let credentials = {
       email,
       password: pwd,
@@ -32,7 +33,13 @@ export const StateContextProvider = ({ children }) => {
     try {
       const response = await axios.post(
         "https://apiservice.estudylite.com/api/login",
-        credentials
+        credentials,
+        {
+          headers: {
+            "Content-Type": "application/json;charset=UTF-8",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
       );
       if (response) {
         localStorage.setItem("user", JSON.stringify(response.data));

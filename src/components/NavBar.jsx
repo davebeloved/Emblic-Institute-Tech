@@ -45,17 +45,22 @@ const NavBar = () => {
               const { label, path } = link;
               return (
                 <li key={i}>
-                  <Link className="text-white lg:text-black links font-inter" to={path}>
+                  <Link
+                    className="text-white lg:text-black links font-inter"
+                    to={path}
+                  >
                     {label}
                   </Link>
                 </li>
               );
             })}
             <div>
-              {token ? (
+              {token.user?.fullname ? (
                 <h2 className="uppercase ml-5">
                   Welcome {token.user.fullname}
                 </h2>
+              ) : !token.user?.fullname && token ? (
+                <h2>Welcome Back</h2>
               ) : (
                 <button
                   onClick={() => navigate("/signup")}
@@ -68,8 +73,11 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
-      <button className="toggle text-black  lg:mt-12 mr-3" onClick={() => setClick(!click)}>
-        {click ? <FaTimes className="text-black"/> : <AiOutlineBars />}
+      <button
+        className="toggle text-black  lg:mt-12 mr-3"
+        onClick={() => setClick(!click)}
+      >
+        {click ? <FaTimes className="text-black" /> : <AiOutlineBars />}
       </button>
     </nav>
   );
