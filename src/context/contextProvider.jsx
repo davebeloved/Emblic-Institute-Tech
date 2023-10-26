@@ -10,10 +10,12 @@ export const StateContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [succeed, setSucceed] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+
   // const [loginUser, setLoginUser] = useState(
   //   JSON.parse(localStorage.getItem("user") || "")
   // );
-  const [token, setTokent] = useState(JSON.parse(localStorage.getItem("user")));
+  const [token, setToken] = useState(JSON.parse(localStorage.getItem("user")));
 
   const navigate = useNavigate();
 
@@ -23,7 +25,6 @@ export const StateContextProvider = ({ children }) => {
       setError("Please fill all fields");
       return;
     }
-
 
     let credentials = {
       email,
@@ -71,7 +72,10 @@ export const StateContextProvider = ({ children }) => {
         error,
         loading,
         token,
+        setToken,
         succeed,
+        isOpen,
+        setIsOpen,
       }}
     >
       {children}

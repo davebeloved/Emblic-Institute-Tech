@@ -3,12 +3,14 @@ import NavBar from "../components/NavBar";
 import AboutImg from "../../public/images/abt.jpg";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
+import { useStateContext } from "../context/contextProvider";
 
 const About = () => {
+  const { setIsOpen } = useStateContext();
   return (
     <>
       <NavBar />
-      <div className="overflow-hidden">
+      <div onClick={() => setIsOpen(false)} className="overflow-hidden">
         <div className="py-32">
           <motion.h1
             initial={{ x: -100, opacity: 0 }}

@@ -6,7 +6,7 @@ import { useStateContext } from "../context/contextProvider";
 
 const Head = () => {
   const navigate = useNavigate();
-  const {token} = useStateContext()
+  const { token } = useStateContext();
   return (
     <>
       <section className="head bg-white">
@@ -27,15 +27,15 @@ const Head = () => {
             {!token && (
               <button
                 onClick={() => navigate("/signin")}
-                className="border border-black px-6 py-0 text-lg -mt-0"
+                className="border border-[#0294da] w-16 md:w-32 lg:w-28 lg:px-6 text-sm  md:text-lg -mt-0  text-[#0294da] hover:shadow-lg   px-7 py-1  lg:ml-4 transition-all duration-500  mb-5 lg:mt-0 lg:mb-0  font-semibold hover:bg-[#0294da] hover:text-white"
               >
                 Sign in
               </button>
             )}
-            <FaFacebookF className="text-[#1F2121]" />
-            <FaInstagram className="text-[#1F2121]" />
-            <FaTwitter className="text-[#1F2121]" />
-            <FaYoutube className="text-[#1F2121]" />
+            <FaFacebookF className="text-[#0294da] hover:-translate-y-1 transition-all duration-500 cursor-pointer" />
+            <FaInstagram className="text-[#0294da] hover:-translate-y-1 transition-all duration-500 cursor-pointer" />
+            <FaTwitter className="text-[#0294da] hover:-translate-y-1 transition-all duration-500 cursor-pointer" />
+            <FaYoutube className="text-[#0294da] hover:-translate-y-1 transition-all duration-500 cursor-pointer" />
           </div>
         </div>
       </section>

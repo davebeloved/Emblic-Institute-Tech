@@ -9,19 +9,64 @@ import { useStateContext } from "../context/contextProvider";
 
 const NavBar = () => {
   const navigate = useNavigate();
-  const { token } = useStateContext();
+  const { token, setToken, isOpen, setIsOpen } = useStateContext();
 
   window.addEventListener("scroll", () => {
     const header = document.querySelector(".myNav");
     header.classList.toggle("sticky", window.scrollY > 0);
   });
   const [click, setClick] = useState(false);
+
+  // logout logic
+  const logout = () => {
+    localStorage.removeItem("user");
+    setToken("");
+    setIsOpen(false);
+  };
   return (
     <nav className="py-2 px-6 lg:px-10 fixed top-0 left-0 w-full  z-[1000] bg-[#fff]  myNav">
+      <div
+        className={
+          isOpen
+            ? "  rounded-b-md absolute right-10 top-14 bg-white flex py-4 px-3  w-72 shadow-lg flex-col"
+            : "hidden"
+        }
+      >
+        <div className="mr-10 cursor-pointer mb-4">
+          {token?.user?.fullname ? (
+            <div className="flex items-center gap-x-2">
+              <div className="flex w-10 h-10 rounded-full bg-[#0294da]  items-center justify-center text-white">
+                <h2 className="uppercase text-white">
+                  {token.user.fullname.charAt(0)}
+                  {token.user.fullname.charAt(1)}
+                </h2>
+              </div>
+              <h2 className="text-black"> {token.user.fullname}</h2>
+            </div>
+          ) : !token?.user?.fullname && token ? (
+            <h2 className="hidden lg:block">Welcome Back</h2>
+          ) : null}
+        </div>
+        <Link className="hover:bg-[#0294da] py-2 px-2 rounded-sm hover:text-white ">
+          Dashboard
+        </Link>
+        <Link className="hover:bg-[#0294da]  py-2 px-2 rounded-sm hover:text-white ">
+          My Cart
+        </Link>
+        <Link className="hover:bg-[#0294da] py-2 px-2 rounded-sm hover:text-white ">
+          Account Settings
+        </Link>
+        <Link
+          onClick={logout}
+          className="hover:bg-[#0294da] py-2 px-2 rounded-sm hover:text-white "
+        >
+          Logout
+        </Link>
+      </div>
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-x-3">
           {/* Logo */}
-          <img className="w-60 lg:80" src={logo} alt="Logo" />
+          <img className="w-60 lg:80 mt-2" src={logo} alt="Logo" />
           <div>
             {/* <h2 className="logo text-white font-bold text-[12px] lg:text-lg font-monts">
               EMBLIC-TECH
@@ -56,25 +101,28 @@ const NavBar = () => {
             })}
             <div>
               {token?.user?.fullname ? (
-                <div className="w-10 h-10 rounded-full bg-[#0294da] flex items-center justify-center text-white">
+                <div
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="hidden cursor-pointer lg:flex w-10 h-10 rounded-full bg-[#0294da]  items-center justify-center text-white"
+                >
                   <h2 className="uppercase text-white">
-                     {token.user.fullname.charAt(0)}
-                     {token.user.fullname.charAt(1)}
+                    {token.user.fullname.charAt(0)}
+                    {token.user.fullname.charAt(1)}
                   </h2>
                 </div>
               ) : !token?.user?.fullname && token ? (
-                <h2>Welcome Back</h2>
+                <h2 className="hidden lg:block">Welcome Back</h2>
               ) : (
                 <div className="flex items-center">
                   <button
                     onClick={() => navigate("/signin")}
-                    className=" text-[#0294da] hover:shadow-lg   px-7 py-1 border border-[#0294da] lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold hover:bg-[#0294da] hover:text-white"
+                    className="text-white text-sm mr-5 lg:mr-0 lg:text-[#0294da] hover:shadow-lg   px-7 lg:py-3 border lg:border-[#0294da] border-white lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold hover:bg-[#0294da] hover:text-white"
                   >
                     Sign in
                   </button>
                   <button
                     onClick={() => navigate("/signup")}
-                    className=" bg-[#0294da] hover:shadow-lg hover:shadow-[#1e4620]/50  px-7 py-3 btn-primary text-white lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold border-none"
+                    className=" bg-white text-[#0294da] lg:bg-[#0a1e27] hover:shadow-lg hover:shadow-[#1e4620]/50  px-7 py-3 btn-primary lg:text-white lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold border-none"
                   >
                     Sign Up
                   </button>
@@ -84,12 +132,30 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
-      <button
-        className="toggle text-black  lg:mt-12 mr-3"
-        onClick={() => setClick(!click)}
-      >
-        {click ? <FaTimes className="text-black" /> : <AiOutlineBars />}
-      </button>
+      <div className="flex items-center  absolute top-3 right-3">
+        <div className="mr-10 cursor-pointer">
+          {token?.user?.fullname ? (
+            <div className="lg:hidden flex w-10 h-10 rounded-full bg-[#0294da]  items-center justify-center text-white">
+              <h2 className="uppercase text-white">
+                {token.user.fullname.charAt(0)}
+                {token.user.fullname.charAt(1)}
+              </h2>
+            </div>
+          ) : !token?.user?.fullname && token ? (
+            <h2 className="hidden lg:block">Welcome Back</h2>
+          ) : null}
+        </div>
+        <button
+          className="toggle text-[#0294da]  lg:mt-12  mr-"
+          onClick={() => setClick(!click)}
+        >
+          {click ? (
+            <FaTimes className="text-[#0294da]" />
+          ) : (
+            <AiOutlineBars className="text-[#0294da]" />
+          )}
+        </button>
+      </div>
     </nav>
   );
 };

@@ -95,17 +95,18 @@ header ul li a {
   }
   .mobile-nav {
     position: absolute;
-    top: 7vh;
+    top: 12vh;
     left: 0;
     width: 100%;
-    background-color: #1f2121;
+    background-color: #0294da;
+    /* background-color: #1f2121; */
   }
   .mobile-navB {
     position: absolute;
     top: 10vh;
     left: 0;
     width: 100%;
-    background-color: #1f2121;
+    background-color: #0294da;
     padding-left: 30px;
     padding-top: 40px;
     display: flex;

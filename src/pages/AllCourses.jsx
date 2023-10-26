@@ -3,12 +3,14 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import Courses from "../components/Courses";
+import { useStateContext } from "../context/contextProvider";
 
 const AllCourses = () => {
+  const { isOpen, setIsOpen } = useStateContext();
   return (
     <>
       <NavBar />
-      <div className="overflow-hidden py-32">
+      <div onClick={() => setIsOpen(false)} className="overflow-hidden py-32">
         <motion.h1
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
