@@ -87,7 +87,7 @@ const Faq = () => {
             }}
             src={FaqImg}
             alt="frequently ask question image"
-            className="w-full lg:h-[70%] object-cover object-center"
+            className="w-full lg:h-[60%] object-cover object-center"
           />
         </div>
       </div>

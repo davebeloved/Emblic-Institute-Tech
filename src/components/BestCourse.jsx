@@ -1,30 +1,14 @@
 import React from "react";
-import Image from "../../public/images/on.png";
+// import Image from "../../public/images/new.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const BestCourse = () => {
   return (
-    <div className=" overflow-hidden px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-16 mt-24 mb-28 lg:mb-12 pt-6  bg-[#0294DA]">
-      <div className="">
-        <motion.img
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.6,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
-            ease: "easeIn",
-            duration: 1,
-          }}
-          src={Image}
-          alt=""
-          className="h-full w-full"
-        />
-      </div>
+    <div className=" overflow-hidden px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2  gap-y-16 mt-24 mb-28 lg:mb-12 pt-6  bg-[#0294DA]">
       <div className="space-y-3 text-center lg:text-left md:space-y-8 lg:mt-12 pb-10 lg:pb-7">
         <motion.h2
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
             delay: 0.6,
@@ -38,7 +22,7 @@ const BestCourse = () => {
           We Offer the Best Quality Course
         </motion.h2>
         <motion.p
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
             delay: 0.8,
@@ -58,7 +42,7 @@ const BestCourse = () => {
           information security.
         </motion.p>
         <motion.button
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
             delay: 0.9,
@@ -72,6 +56,23 @@ const BestCourse = () => {
           Learn More
           <AiOutlineArrowRight className="text-white" />
         </motion.button>
+      </div>
+
+      <div className="">
+        <motion.img
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.6,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          src="https://res.cloudinary.com/dsfm0so1k/image/upload/v1698308298/emblic/best_jw22ga.png"
+          alt=""
+          className="h-full w-full object-cover object-center"
+        />
       </div>
     </div>
   );

@@ -55,19 +55,30 @@ const NavBar = () => {
               );
             })}
             <div>
-              {token.user?.fullname ? (
-                <h2 className="uppercase ml-5">
-                  Welcome {token.user.fullname}
-                </h2>
-              ) : !token.user?.fullname && token ? (
+              {token?.user?.fullname ? (
+                <div className="w-10 h-10 rounded-full bg-[#0294da] flex items-center justify-center text-white">
+                  <h2 className="uppercase text-white">
+                     {token.user.fullname.charAt(0)}
+                     {token.user.fullname.charAt(1)}
+                  </h2>
+                </div>
+              ) : !token?.user?.fullname && token ? (
                 <h2>Welcome Back</h2>
               ) : (
-                <button
-                  onClick={() => navigate("/signup")}
-                  className=" bg-[#0294da] hover:shadow-lg hover:shadow-[#1e4620]/50  px-7 py-2 btn-primary text-white lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold border-none"
-                >
-                  Sign Up
-                </button>
+                <div className="flex items-center">
+                  <button
+                    onClick={() => navigate("/signin")}
+                    className=" text-[#0294da] hover:shadow-lg   px-7 py-1 border border-[#0294da] lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold hover:bg-[#0294da] hover:text-white"
+                  >
+                    Sign in
+                  </button>
+                  <button
+                    onClick={() => navigate("/signup")}
+                    className=" bg-[#0294da] hover:shadow-lg hover:shadow-[#1e4620]/50  px-7 py-3 btn-primary text-white lg:ml-4 transition-all duration-500 mt-3 mb-5 lg:mt-0 lg:mb-0  font-semibold border-none"
+                  >
+                    Sign Up
+                  </button>
+                </div>
               )}
             </div>
           </ul>

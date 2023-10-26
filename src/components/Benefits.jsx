@@ -1,13 +1,13 @@
 import React from "react";
 // import BenefitImg from "../assets/.png";
 import { trainingBenefits } from "../data";
-import Benefit from '../../public/images/about.png'
+// import Benefit from "../assets/bene.png";
 import { motion } from "framer-motion";
 
 const Benefits = () => {
   return (
     <div className=" py-14 pt-72 lg:pt-44 px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-4 ">
-      <div className=" col-span-2">
+      <div className=" col-span-2 ">
         <motion.img
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -18,9 +18,9 @@ const Benefits = () => {
             ease: "easeIn",
             duration: 1,
           }}
-          src={Benefit}
+          src="https://res.cloudinary.com/dsfm0so1k/image/upload/v1698307736/emblic/bene_xypjr7.png"
           alt=""
-          className="w-full h-[85%] object-cover object-center"
+          className="w-full h-[95%]  object-cover object-center"
         />
       </div>
       <div className="col-span-2 w-full overflow-hidden">

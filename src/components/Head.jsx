@@ -1,8 +1,12 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Logo from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
+import { useStateContext } from "../context/contextProvider";
 
 const Head = () => {
+  const navigate = useNavigate();
+  const {token} = useStateContext()
   return (
     <>
       <section className="head bg-white">
@@ -20,10 +24,18 @@ const Head = () => {
           </div>
 
           <div className="flex items-center gap-x-2 ml-4 lg:ml-0 lg:mr-6">
-            <FaFacebookF className="text-[#1F2121]"/>
-            <FaInstagram className="text-[#1F2121]"/>
-            <FaTwitter className="text-[#1F2121]"/>
-            <FaYoutube className="text-[#1F2121]"/>
+            {!token && (
+              <button
+                onClick={() => navigate("/signin")}
+                className="border border-black px-6 py-0 text-lg -mt-0"
+              >
+                Sign in
+              </button>
+            )}
+            <FaFacebookF className="text-[#1F2121]" />
+            <FaInstagram className="text-[#1F2121]" />
+            <FaTwitter className="text-[#1F2121]" />
+            <FaYoutube className="text-[#1F2121]" />
           </div>
         </div>
       </section>
